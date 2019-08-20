@@ -1,5 +1,4 @@
-# Image-Classification-Project
-
+# Capstone Project:
 
 Classifing Sports Images using Convolutional Neural Networks
 
@@ -8,5 +7,6 @@ For this project I created my very own dataset of sports images by scraping imag
 The final model was than taken and turned into a web app which has been hosted on Heroku for others to try.
 
 https://sports-predictions.herokuapp.com/ 
+
 
 

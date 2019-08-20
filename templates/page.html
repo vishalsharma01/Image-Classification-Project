@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang ='en'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+/* .insert {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.sub {
+
+  position: absolute;
+  top: 70%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("static/tsnbg.jpg");
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hello{
+  position: absolute;
+  top: 70%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+/* .button:hover {
+  background-color: black;
+} */
+/* .try {
+  position: absolute;
+  top: 50;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+</style>
+
+
+  </head>
+  <body>
+    <img src = 'static/tsnbg.jpg' class = 'bg'>
+    <main>
+    <!-- <form enctype="multipart/form-data" action = "/result_image" method="POST">
+           <div class="row">
+             <div class="column left"></div>
+             <div class="column middle">
+               <p class= "insert"><input class= "insert" type="file" name="img_file" value="" accept = ".jpg, .png, .PNG, .JPG, .JPEG"></p>
+               <p><input class = "submit" type="submit" name="submit" value="Upload"></p>
+             </div>
+             <div class="column right"></div>
+               pattern="https://.*" size="30"
+
+           </form> -->
+           <!-- <form enctype="multipart/form-data" action = "/result_image" method = "POST"> -->
+           <form action = "/result_image" method="POST">
+           <!-- <label class = 'try' for="url">Enter an https:// URL:</label>
+
+           <input class = 'try' type="url" name="url" id="url"
+            placeholder="https://example.com"
+            required> -->
+
+             <p><input class = 'hello' name="url" type="url" id="url" placeholder="               Insert Link" required></p>
+            <p><input class = "sub" type="submit" name="submit" value="Submit"></p>
+           <!-- <button "Submit" </button> -->
+         </form>
+    </main>
+    </body>
+  </html>

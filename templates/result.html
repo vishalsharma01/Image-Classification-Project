@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .backg {
+      /* The image used */
+      background-image: url("tsn2.jpg");
+
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .predpic{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .test {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text {
+
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .loop {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <img src= "static/tsn2.jpg" class = 'backg'>
+    <img src= {{image_url}} class="predpic" width='500px' height ='auto'>
+    <div class= "test">
+      <p><font face="ESP" font size='100' color="black">WHAT SPORT IS IT?</font></p>
+    </div>
+    <div class="text">
+      <p><font face="ESP" font size='100' color="black">{{value}}% {{pred}}</font></p>
+    </div>
+    <button class = 'loop' onclick="goBack()">New Image</button>
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+<iframe src="static/hk.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+<audio id='player' autoplay loop>
+<source src = "static/hk.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
