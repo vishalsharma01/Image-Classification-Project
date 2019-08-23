@@ -9,7 +9,7 @@ The final model was than taken and turned into a web app which has been hosted o
 https://sports-predictions.herokuapp.com/ 
 
 
-(Model is not 100% accurate and is subject to confusing images to incorrect classes. I will be continueing to work on this project to better improve the overall model score)
+(Model is not 100% accurate and is subject to confusing images to incorrect classes. I will be continuing to work on this project to better improve the overall model score)
 
 
 
